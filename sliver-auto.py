@@ -1,6 +1,6 @@
 import pexpect
 def main():
-		sliver = pexpect.spawn('../sliver-server')
+		sliver = pexpect.spawn('./sliver-server')
 		sliver.sendline('generate --dns blog.microsoft.com --os windows --arch 386 -f exe -s dns__386.exe')
 		sliver.sendline('generate --dns blog.microsoft.com --os windows --arch 386 -f shellcode -s dns__386.shellcode')
 		sliver.sendline('generate --dns blog.microsoft.com --os windows --arch 386 -f service -s dns__386.service')
